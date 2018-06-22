@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Pizzabestellung</title>
+</head>
+<body bgcolor="yellow">
+<h1> Pizzabestellung: </h1>
+
+<form action="bestellen.php" method="get">
+<label for="vname">Vorname: <input id="vname" name="vname"></label><br>
+<label for="nname">Nachname: <input id="zname" name="nname"></label><br>
+<label for="strasse">Strasse: <input id="strasse" name="strasse"></label><br>
+<label for="hnr">Hausnummer: <input id="hnr" name="hnr"></label><br>
+<label for="plz">Postleitzahl: <input id="plz" name="plz"></label><br>
+<label for="ort">Ort: <input id="ort" name="ort"></label><br>
+<p>Bezahlmethode auswaehlen: </p>
+<label for="kreditkarte">Kreditkarte</label> <input type="radio" id="kreditkarte" name="kreditkarte" value="0"> <br> 
+<label for="bar">Bar</label> <input type="radio" id="bar" name="bar" value="1"> <br>
+
+<p>Zutaten auswaehlen: </p>
+
+<label for="schinken">Schinken</label> <input type="checkbox" id="schinken" name=""><br>
+<label for="salami">Salami</label> <input type="checkbox" id="salami" name="zutaten[]"><br>
+<label for="zwiebeln">Zwiebeln</label> <input type="checkbox" id="zwiebeln" name="zutaten[]"><br>
+<label for="pepperoni">Pepperoni</label> <input type="checkbox" id="pepperoni" name="zutaten[]"><br>
+
+<input type="submit" value="senden"> </form>
+
+</body>
+</html>
